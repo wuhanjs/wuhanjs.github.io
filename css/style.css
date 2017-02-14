@@ -505,6 +505,9 @@ code {
 #sub-nav #profile-nav .fa {
   line-height: 40px;
 }
+#search-form-wrap {
+  display: none;
+}
 @media screen and (max-width: 559px) {
   #search-form-wrap {
     display: none;
