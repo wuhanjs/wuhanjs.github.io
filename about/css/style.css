@@ -1,0 +1,36 @@
+.heroes {
+	overflow: hidden;
+}
+
+.heroes li {
+	float: left;
+	margin: 5%;
+	padding: 10px;
+	background-color: #f9f9f9;
+	border-radius: 8px;
+}
+
+.heroes h2 {
+	font-size: 28px;
+	color: #69c;
+}
+
+.hero-word {
+	padding-left: 10px;
+	color: #999;
+	margin: 0.4em 0;
+}
+
+.hero-main > a {
+	float: left;
+	border: 1px solid #aaa;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.hero-web a {
+	float: left;
+	font-size: 16px;
+	line-height: 28px;
+	margin-left: 8px;
+}
