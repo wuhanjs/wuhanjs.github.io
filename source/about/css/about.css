@@ -1,0 +1,24 @@
+.main-body-inner{ padding-right:0;background: #fff;}
+.user-list{}
+.user-list li{ float:left; width:31%; height:190px; margin:0 10px 20px 10px;}
+.user-list li img{ width:100px; height:100px;border-radius:50px; overflow:hidden;}
+.user-list li .user-title{ height:50px; line-height:50px; margin-bottom:10px;}
+.user-list li .user-title h2{ font-size:22px;}
+.user-list li .user-title h2 *{ display:inline-block; vertical-align:middle;}
+.user-list li .user-title a{color: #6699cc;}
+.user-title .no{ margin-right:10px; color:#bbb;}
+.useinfo-word .sub{color: #999;height:45px; line-height:23px; font-size:14px; margin-left:10px;text-overflow: ellipsis; overflow:hidden;}
+.desc-info{ text-align:left; padding-left:15px; font-size:16px;}
+.user-list .desc{ vertical-align:top;}
+.userinfo-img,.userinfo-content .desc{ display:inline-block;}
+.article-summary{ overflow:hidden;}
+.article-duoshuo{ padding:30px;}
+.userinfo-content img {
+	-webkit-transition: 0.3s;
+}
+.userinfo-content img:hover {
+	-webkit-transform: scale(1.2);
+}
+.article-summary a:hover {
+	color: #709400;
+}

@@ -1,0 +1,40 @@
+---
+layout: custom
+title: 英雄榜
+---
+<link rel="stylesheet" type="text/css" href="css/about.css"/>
+<article id="post-hello" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        <header class="article-header">
+            <h1 itemprop="name"><a class="article-title" href="/2017/02/14/hello/">英雄榜</a></h>
+                <div class="article-meta">
+                    <div class="article-date">
+                        <i class="fa fa-calendar"></i>
+                        <a href="/2017/02/14/hello/">
+                            <time datetime="2017-02-14T14:37:42.165Z" itemprop="datePublished">2017-02-14</time>
+                        </a>
+                    </div>
+                </div>
+        </header>
+        <artical>
+            <ol id="user-list" class="user-list clearfix" >
+                <li v-for="(item, index) in userInfo">
+                    <div class="user-title"><h2><em class="no" v-text="index+1">.</em><a :href="item.blog" target="_blank" v-text="item.name"></a></h2></div>
+                    <div class="userinfo-content">
+                        <a class="userinfo-img" :href="item.blog" target="_blank"><img :src="item.avatar" alt=""></a>
+                        <div class="desc">
+                            <dl class="desc-info">
+                                <dd><a :href="item.blog" target="_blank">博客</a></dd>
+                                <dd><a :href="item.github" target="_blank">Github</a></dd>
+                                <dd><a :href="item.website" target="_blank">个人站点</a></dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="useinfo-word"><p class="sub" :title="item.word" v-text="item.word"></p></div>
+                </li>
+            </ol>
+        </artical>
+    </div>
+</article>
+<script src="/js/vue.min.js"></script>
+<script src="/js/about.js"></script>

@@ -1,0 +1,18 @@
+---
+layout: false
+---
+<%- partial('common/head') %>
+<body>
+<div id="container">
+    <%- partial('common/header') %>
+    <div class="outer">
+        <% if (theme.customize.profile.enabled) { %>
+        <%- partial('common/profile', null, {cache: !config.relative_link}) %>
+        <% } %>
+        <section id="main"><%- page.content %></section>
+    </div>
+    <%- partial('common/footer', null, {cache: !config.relative_link}) %>
+    <%- partial('common/scripts') %>
+</div>
+</body>
+</html>
