@@ -140,7 +140,7 @@ code {
 .outer {
   max-width: 1320px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 16px;
 }
 .outer:before,
 .outer:after {
@@ -180,32 +180,6 @@ code {
 }
 #container > .outer {
   margin-bottom: 30px;
-}
-@media screen and (min-width: 1200px) {
-  #main {
-    display: inline;
-    float: left;
-    width: 52.307692307692314%;
-    margin: 0 0.769230769230769%;
-  }
-}
-@media screen and (min-width: 800px) and (max-width: 1199px) {
-  #main {
-    display: inline;
-    float: left;
-    width: 67.6923076923077%;
-    margin: 0 0.769230769230769%;
-  }
-}
-@media screen and (min-width: 560px) and (max-width: 799px) {
-  #main {
-    width: 100%;
-  }
-}
-@media screen and (max-width: 559px) {
-  #main {
-    width: 100%;
-  }
 }
 .archive-article-header a,
 .layout-wrap-inner.tag-cloud a,
@@ -426,32 +400,17 @@ code {
   display: inline-block;
   line-height: 48px;
 }
-@media screen and (min-width: 560px) and (max-width: 799px) {
+@media screen and (max-width: 799px) {
   #header-sub {
     display: none;
   }
 }
-@media screen and (max-width: 559px) {
-  #header-sub {
-    display: none;
-  }
-}
-@media screen and (min-width: 560px) and (max-width: 799px) {
+@media screen and (max-width: 799px) {
   #main-nav {
     display: none;
   }
 }
-@media screen and (max-width: 559px) {
-  #main-nav {
-    display: none;
-  }
-}
-@media screen and (min-width: 800px) and (max-width: 1199px) {
-  #main-nav-mobile {
-    display: none;
-  }
-}
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 800px) {
   #main-nav-mobile {
     display: none;
   }
@@ -507,11 +466,6 @@ code {
 }
 #search-form-wrap {
   display: none;
-}
-@media screen and (max-width: 559px) {
-  #search-form-wrap {
-    display: none;
-  }
 }
 #search-form-wrap .search-form {
   position: relative;
@@ -612,7 +566,7 @@ code {
   line-height: 32px;
   border-radius: 16px;
 }
-@media screen and (max-width: 559px) {
+@media screen and (max-width: 799px) {
   #main-nav-mobile .menu .search-form-input {
     display: block;
   }
@@ -643,10 +597,8 @@ code {
   border-bottom: none;
 }
 #profile {
-  display: inline;
   float: left;
-  width: 21.53846153846154%;
-  margin: 0 0.769230769230769%;
+  width: 100%;
   display: none;
 }
 @media screen and (min-width: 1200px) {
@@ -655,7 +607,7 @@ code {
   }
 }
 #profile .inner {
-  margin-top: 40px;
+  margin-top: 20px;
   background: #fff;
 }
 #profile .inner .base-info #avatar {
@@ -781,7 +733,7 @@ code {
   right: 20px;
   z-index: 999;
   display: block;
-  min-width: 280px;
+  max-width: 280px;
   position: absolute;
 }
 #profile.card .profile-inner {
@@ -805,7 +757,7 @@ code {
   border-color: transparent transparent #dbdee1 transparent;
 }
 .article {
-  margin: 40px 0;
+  margin: 20px 0;
 }
 .article-inner {
   overflow: hidden;
@@ -833,12 +785,7 @@ a.article-title:visited {
 a.article-title:hover {
   color: #38b7ea;
 }
-@media screen and (max-width: 559px) {
-  .article-title {
-    font-size: 1.6em;
-  }
-}
-@media screen and (min-width: 560px) and (max-width: 799px) {
+@media screen and (max-width: 799px) {
   .article-title {
     font-size: 1.6em;
   }
@@ -1595,12 +1542,7 @@ ol.toc {
   margin: 40px 20px 40px 40px;
   border-left: 3px solid #eceff2;
 }
-@media screen and (max-width: 559px) {
-  .timeline-wrap {
-    margin: 40px 20px 40px 30px;
-  }
-}
-@media screen and (min-width: 560px) and (max-width: 799px) {
+@media screen and (max-width: 799px) {
   .timeline-wrap {
     margin: 40px 20px 40px 30px;
   }
@@ -1696,22 +1638,6 @@ ol.toc {
 #footer-info {
   line-height: 1.6em;
   font-size: 0.85em;
-}
-@media screen and (min-width: 1200px) {
-  #sidebar {
-    display: inline;
-    float: left;
-    width: 21.53846153846154%;
-    margin: 0 0.769230769230769%;
-  }
-}
-@media screen and (min-width: 800px) and (max-width: 1199px) {
-  #sidebar {
-    display: inline;
-    float: left;
-    width: 29.230769230769234%;
-    margin: 0 0.769230769230769%;
-  }
 }
 .widget {
   line-height: 1.6em;
@@ -2184,4 +2110,50 @@ ol.toc {
 .highlight .code .type,
 .highlight .code .selector-id {
   font-weight: bold;
+}
+/* blow changed by fengkfengk
+* rewrite some responsive CSS
+*/
+#sidebar {
+  width: 100%;
+  float: left;
+}
+@media screen and (min-width: 1200px) {
+  #main {
+    float: left;
+    width: 75%;
+    margin: 0 1%;
+  }
+  #side-container {
+    float: left;
+    width: 21%;
+    margin: 0 1%;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 1199px) {
+  #main {
+    float: left;
+    width: 84%;
+    margin: 0 1%;
+  }
+  #side-container {
+    float: left;
+    width: 12%;
+    margin: 0 1%;
+  }
+  .outer {
+    padding: 8px;
+  }
+}
+@media screen and (max-width: 799px) {
+  .outer {
+    padding: 0;
+  }
+  #main {
+    width: 100%;
+  }
+  .widget-wrap {
+    margin: 12px 5px;
+    padding-left: 10px;
+  }
 }
