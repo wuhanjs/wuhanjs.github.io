@@ -1,8 +1,10 @@
 # Menus
 menu:
-  Home: .
-  Archives: archives
-  About: about
+  首页: .
+  归档: archives
+  招聘: categories/hr/
+  求职: categories/job/
+  英雄榜: about
 
 # Customize
 customize:
@@ -20,7 +22,7 @@ customize:
         location: WuHan, China
         follow: https://github.com/wuhanjs/
     highlight: monokai
-    sidebar: right # sidebar position, options: left, right
+    sidebar: left # sidebar position, options: left, right
     thumbnail: true # enable posts thumbnail, options: true, false
     favicon: # path to favicon
     social_links:
